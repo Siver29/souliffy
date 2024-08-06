@@ -20,6 +20,9 @@
   text-transform: uppercase;
 }
 
+a{
+  font-family: "Tajawal", sans-serif;
+}
 a,
 a:hover,
 a:focus {
@@ -133,4 +136,3 @@ a:focus {
 .quote_btn-container a span {
   margin-right: 5px;
 }
-  
