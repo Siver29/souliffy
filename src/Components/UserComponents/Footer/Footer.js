@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="col-md-6 border-bottom border-top bg-light text-dark pt-4">
           <div className="col-md-4 mb-3">
             <p>
-              <img className='' src='assets/svg/round-place.svg' alt='Location' /> دمشق
+              <img className='' src='assets/svg/round-place.svg' alt='Location' /> دمشق،سورية
             </p>
           </div>
           <div className="col-md-4 mb-3">
