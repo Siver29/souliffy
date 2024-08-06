@@ -1,47 +1,43 @@
 import React from 'react'
 import './Navbar.css'
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 const Navbar = () => {
     return (
-        <div>
-            <header class="main-header">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg main-nav px-0">
-                        <a class="navbar-brand" href="/mojo">
-                            <img src="/Assets/images/logo.png" alt="rajeshdas.com"/>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar icon-bar-1"></span>
-                            <span class="icon-bar icon-bar-2"></span>
-                            <span class="icon-bar icon-bar-3"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="mainMenu">
-                            <ul class="navbar-nav ml-auto text-uppercase f1">
-                                <li>
-                                    <a href="#home" class="active active-first">home</a>
+        <div className='container'>
+            <header className="header_section long_section px-0 ">
+                <nav className="navbar navbar-expand-lg custom_nav-container ">
+                    <a className="navbar-brand ml-3" href="index.html">
+                        <span>
+                            Souliffy
+                        </span>
+                    </a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className=""> </span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div className="d-flex flex-column flex-lg-row align-items-center">
+                            <ul className="navbar-nav ">
+                                <li className="nav-item active">
+                                    <a className="nav-link active" href="#slider">Home</a>
                                 </li>
-                                <li>
-                                    <a href="#about">about us</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#about"> About us</a>
                                 </li>
-                                <li>
-                                    <a href="#service">services</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#services">Services</a>
                                 </li>
-                                <li>
-                                    <a href="#project">projects</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#doctors">Doctors</a>
                                 </li>
-                                <li>
-                                    <a href="#team">team</a>
-                                </li>
-                                <li>
-                                    <a href="#testimony">testimonils</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">contact</a>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#FAQ">FQA</a>
                                 </li>
                             </ul>
                         </div>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </header>
         </div>
     )
