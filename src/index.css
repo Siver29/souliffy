@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
 :root{
   --primary-blue-color: #ADD8E6
   --secondary-green-color: #8DA57E
@@ -10,6 +12,10 @@
   --primary-bg-color: #FFFFFF
   --secondary-bg-color: #F0F0FC
   --third-bg-color: #F5F5F5
+}
+
+p{
+  font-family: "Tajawal", sans-serif;
 }
 
 body {
