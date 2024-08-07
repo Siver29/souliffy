@@ -1,7 +1,8 @@
+// TestmonialsBox.js
 import React from 'react';
-import './TestmonialsBox.css'
+import './TestimonialsBox.css';
 
-function TestmonialsBox() {
+function TestmonialsBox({ quote }) {
     return (
         <div className="container mt-5 TestmonialsBox">
             <div className="row h-100 text-center quote-box">
@@ -15,7 +16,8 @@ function TestmonialsBox() {
                     </div>
                 </div>
                 <p className="mb-0 quote">
-                التوتر والقلق اختفوا بعد انضمامي لـ Souliffy. الدعم هنا غير حياتي                </p>
+                    {quote} انطلقنا من إيماننا العميق بضرورة توفير الدعم النفسي المتخصص للمجتمع يعاني 
+                </p>
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-8'></div>   
