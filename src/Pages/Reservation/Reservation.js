@@ -4,7 +4,7 @@ import CalenderWrapper from '../../Components/Calendar/CalenderWrapper'
 function Reservation() {
   return (
     <section className='reservation-page'>
-      <CalenderWrapper/>
+      <CalenderWrapper/><p>cccc</p>
     </section>
   )
 }
