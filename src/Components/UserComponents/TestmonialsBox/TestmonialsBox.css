@@ -1,0 +1,34 @@
+.TestmonialsBox {
+    height: 300px;
+    width: 300px;
+    background-color: var(--primary-blue-color);
+    
+}
+
+.triangle {
+    width: 400px;
+    height: 100px;
+    background-color: var(--primary-bg-color);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    /* margin-top: 10px; */
+    position: absolute;
+    bottom: 0;
+    border-bottom: 10px solid white;
+    z-index: 10;
+/* box-shadow: 100px 100px 10px white; */
+}
+
+
+.quote {
+    width: 250px;
+}
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.quote-img{
+    transform: rotate(180deg);
+}

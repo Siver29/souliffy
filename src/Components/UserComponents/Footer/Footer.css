@@ -1,9 +1,35 @@
 .footer {
     margin-top: 100px;
     background-color: #F5F5F5;
+    height: 350px;
   }
   
   .footer-links {
     text-decoration: none;
   }
-  
+  .place{
+    margin-right: 12px;
+  }
+  .btn-submit{
+    background-color: var(--primary-blue-color) ;
+    color: var(--primary-font-color);
+  }
+  .btn-submit:hover{
+    background-color: var(--secondary-green-color) ;
+  }
+  .contact-form{
+    height: 100px;
+  }
+  .textarea-height{
+    height: 75px;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      margin-top: 100px;
+      background-color: #F5F5F5;
+      height: 600px;
+    }
+    .contact-info{
+      padding-top: 140px;
+    }
+  }
