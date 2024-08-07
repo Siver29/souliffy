@@ -1,44 +1,50 @@
-import React from 'react'
-import './Navbar.css'
+import React from 'react';
+import './Navbar.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import PrimaryButton from '../PrimaryButton/PrimaryButton';
 
 const Navbar = () => {
     return (
         <div className='container'>
             <header className="header_section long_section px-0 ">
-                <nav className="navbar navbar-expand-lg custom_nav-container ">
-                    <a className=" navbar-brand ml-3" href="index.html">
-                        <img className='img-fluid' width='110' src='./Assets/img/souliffy-logo-primary-text-color.png'/>
+                <nav className="navbar navbar-expand-lg custom_nav-container">
+                    <a className="navbar-brand" href="index.html">
+                        <img className='img-fluid' width='110' src='./Assets/img/souliffy-logo-primary-text-color.png' alt="Souliffy Logo"/>
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className=""> </span>
                     </button>
-
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
                         <div className="d-flex flex-column flex-lg-row align-items-center">
-                            <ul className="navbar-nav ">
+                            <ul className="navbar-nav">
                                 <li className="nav-item active">
                                     <a className="nav-link active" href="#slider">الرئيسية</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#about"> About us</a>
+                                    <a className="nav-link" href="#about">من نحن؟</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#services">Services</a>
+                                    <a className="nav-link" href="#services">خدماتنا</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#doctors">Doctors</a>
+                                    <a className="nav-link" href="#services">فريقنا الطبي</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#FAQ">FQA</a>
+                                    <a className="nav-link" href="#doctors">مقالات</a>
                                 </li>
+                                {/* <li className="nav-item">
+                                    <a className="nav-link" href="#FAQ">الاختبار</a>
+                                </li> */}
                             </ul>
                         </div>
+                    </div>
+                    <div className="d-none d-lg-block">
+                        <PrimaryButton/>
                     </div>
                 </nav>
             </header>
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
