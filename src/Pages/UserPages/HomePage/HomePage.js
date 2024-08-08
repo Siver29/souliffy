@@ -8,6 +8,7 @@ const HomePage = () => {
 
   return (
     <div>
+      <p>salma</p>
       <Hero/>
       {/* <TestimonialsContainer/> */}
       <About/>
