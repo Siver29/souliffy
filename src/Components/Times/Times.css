@@ -1,0 +1,8 @@
+.timeCard{
+    border: 1px solid #B5BFAF !important;
+    background-color: var(--primary-bg-color);
+    width: 100px;
+}
+.timeCard:hover{
+    background-color: var(--secondary-green-color);
+}

@@ -1,0 +1,14 @@
+.primary-btn {
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth transition for color changes */
+
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-green-color) !important;
+}
+
+.primary-btn:active {
+    background-color: var(--primary-blue-active-color) !important;
+    /* Define an active (click) color */
+}
