@@ -61,7 +61,7 @@
 .today {
   font-weight: bold;
   color: var(--primary-font-color);
-  background-color: var(--primary-blue-color);
+  background-color: transparent;
 }
 .today:hover{
   color: var(--primary-font-color);

@@ -2,6 +2,7 @@ import React from 'react'
 import CalenderWrapper from '../../Components/Calendar/CalenderWrapper'
 import Times from '../../Components/Times/Times'
 import ReservationForm from '../../Components/ReservationForm/ReservationForm'
+import ReservationNote from '../../Components/ReservationNote/ReservationNote'
 import './Reservation.css'
 
 function Reservation() {
@@ -26,7 +27,8 @@ function Reservation() {
             </div>
           </div>
           <div className='col-12 col-md-6 p-5'>
-            <div className='mt-2'>
+            <div className=''>
+              <ReservationNote/>
               <ReservationForm/>
             </div>
           </div>
