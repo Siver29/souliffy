@@ -1,9 +1,6 @@
 import React from 'react'
-import Footer from '../../../Components/UserComponents/Footer/Footer'
 import Hero from '../../../Components/UserComponents/HeroSection/Hero'
-import TestmonialsBox from '../../../Components/UserComponents/TestimonialsBox/TestimonialsBox'
-import TestimonialsContainer from '../../../Components/UserComponents/TestimonialsContainer/TestimonialsContainer'
-import TestimonialsSlider from '../../../Components/UserComponents/TestimonialsSlider/TestimonialsSlider'
+import About from '../../../Components/UserComponents/AboutSection/About';
 
 const HomePage = () => {
   const testmonials = [
@@ -15,7 +12,7 @@ const HomePage = () => {
     <div>
       <Hero/>
       {/* <TestimonialsContainer/> */}
-      <Footer/>
+      <About/>
     </div>
   )
 }

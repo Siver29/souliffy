@@ -2,7 +2,7 @@
 import React from 'react';
 import './TestimonialsBox.css';
 
-function TestmonialsBox({ testmonialText, bgColor, triangleColor, quote }) {
+function TestmonialsBox({ testmonialText, bgColor, triangleColor, quote, title }) {
     const triangleStyleBefore = {
         content: '',
         width: 0,
@@ -37,11 +37,12 @@ function TestmonialsBox({ testmonialText, bgColor, triangleColor, quote }) {
                 <div className='row'>
                     <div className='col-1'></div>
                     <div className='col-3'>
-                        <img src={quote} className='img-fluid' alt='quote' />
+                        {quote && <img src={quote} className='img-fluid' alt='quote' />}
                     </div>
                     <div className='col-8'></div>
                 </div>
             </div>
+            {title && <h2>{title}</h2>}
             <p className="quote-text">
                 {testmonialText}
             </p>
@@ -49,7 +50,7 @@ function TestmonialsBox({ testmonialText, bgColor, triangleColor, quote }) {
                 <div className='row'>
                     <div className='col-8'></div>
                     <div className='col-3'>
-                        <img src={quote} className='img-fluid quote-img' alt='quote' />
+                        {quote && <img src={quote} className='img-fluid quote-img' alt='quote' />}
                     </div>
                     <div className='col-1'></div>
                 </div>
