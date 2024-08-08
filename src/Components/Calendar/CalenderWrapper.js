@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './CalenderWrapper.css'
 
-function CalenderWrapper() {
+function CalenderWrapper({ onDateChange }) {
   const [date, setDate] = useState(null);
   const today = new Date();
 
@@ -11,6 +11,7 @@ function CalenderWrapper() {
     if (date >= today) {
       const formattedDate = date.toLocaleDateString('en-CA');
       setDate(formattedDate);
+      onDateChange(formattedDate);
     }
   };
 
