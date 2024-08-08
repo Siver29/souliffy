@@ -15,7 +15,7 @@ function CalenderWrapper() {
   };
 
   return (
-    <div className='w-100 w-md-50  calender-wrapper'>
+    <div className='w-100  calender-wrapper mb-5'>
       <p className='mt-3'>إختر التاريخ</p>
       <Calendar
         onChange={onChange}
