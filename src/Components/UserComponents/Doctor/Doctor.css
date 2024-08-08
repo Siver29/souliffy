@@ -1,0 +1,13 @@
+.doctor-name{
+    color: var(--primary-font-color);
+}
+.specialization{
+    color: var(--primary-blue-color);
+}
+.Doctor{
+    width: 800px;
+    height: 200px;
+}
+.doctor-img{
+    height: 200px;
+}

@@ -1,0 +1,15 @@
+.article-card{
+    max-width: 350px;
+    margin: auto ;
+    overflow: hidden;
+}
+.article-img{
+    max-height: 200px;
+    object-fit: cover;
+}
+.card-title{
+    color: var(--primary-font-color);
+}
+.card-text{
+    color: #757373;
+}
