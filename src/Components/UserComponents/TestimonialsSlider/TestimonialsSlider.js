@@ -16,7 +16,7 @@ const TestimonialsSlider = () => {
     };
 
     return (
-        <div className='testimonials-slider mx-auto'>
+        <div className='testimonials-slider mx-auto mt-5'>
             <Slider {...settings}>
                 <div>
                     <TestimonialsContainer />
