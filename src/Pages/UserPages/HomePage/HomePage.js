@@ -13,13 +13,11 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* <Navbar/> */}
       {/* <TestimonialsContainer/> */}
       {/* <Article/> */}
       <DoctorPage/>
       <ArticlePage/>
-      {/* <TestimonialsSlider/> */}
-      <Footer/>
+      <TestimonialsSlider/>
     </div>
   )
 }
