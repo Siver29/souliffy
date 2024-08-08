@@ -1,37 +1,32 @@
-// TestimonialsSlider.js
 import React from 'react';
 import Slider from 'react-slick';
+import TestimonialsContainer from '../TestimonialsContainer/TestimonialsContainer';
 import './TestimonialsSlider.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import TestmonialsBox from '../TestimonialsBox/TestimonialsBox';
 
-const testimonials = [
-    "التوتر والقلق اختفوا بعد انضمامي لـ Souliffy. الدعم هنا غير حياتي",
-    "التوتر والقلق اختفوا بعد انضمامي لـ Souliffy. الدعم هنا غير حياتي",
-    "التوتر والقلق اختفوا بعد انضمامي لـ Souliffy. الدعم هنا غير حياتي"
-];
-
-function TestimonialsSlider() {
+const TestimonialsSlider = () => {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 1,       // Show one container (which contains 3 testimonials)
+        slidesToScroll: 1,     // Scroll one container at a time
+        arrows: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 300000000000000000000
     };
 
     return (
-        <div className="testimonials-slider">
-            <h2 className="text-center">آراء المستخدمين</h2>
+        <div className='testimonials-slider mx-auto'>
             <Slider {...settings}>
-                {testimonials.map((quote, index) => (
-                    <div key={index}>
-                        <TestmonialsBox quote={quote}/> 
-                    </div>
-                ))}
+                <div>
+                    <TestimonialsContainer />
+                </div>
+                <div>
+                    <TestimonialsContainer />
+                </div>
+                <div>
+                    <TestimonialsContainer />
+                </div>
             </Slider>
         </div>
     );

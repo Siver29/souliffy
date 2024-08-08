@@ -1,4 +1,4 @@
-.TestmonialsBox {
+/* .TestmonialsBox {
     height: 300px;
     width: 300px;
     background-color: var(--primary-blue-color);
@@ -10,7 +10,6 @@
     height: 100px;
     background-color: var(--primary-bg-color);
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    /* margin-top: 10px; */
     position: absolute;
     bottom: 0;
     border-bottom: 10px solid white;
@@ -30,4 +29,51 @@
 }
 .quote-img{
     transform: rotate(180deg);
-}
+} */
+
+/* ....................... */
+  
+  .quote-shape {
+    background-color: var(--primary-blue-color);
+    color: #000;
+    padding: 20px;
+    position: relative;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .quote-shape::before,
+  .quote-shape::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    bottom: -20px;
+    
+  } */
+  
+  /* .quote-shape::before {
+    border-width: 110px 175px 0 0;
+    top:250px;
+    border-color: var(--primary-blue-color) transparent transparent transparent;
+  }
+  
+  .quote-shape::after {
+    right: -0px;
+    top:250px;
+    border-width: 110px 0 0 175px;
+    border-color: var(--primary-blue-color) transparent transparent transparent;
+  } */
+  
+  .quote-text {
+    position: relative;
+    z-index: 1;
+  }
+  .quote-img{
+    transform: rotate(180deg);
+  }
