@@ -4,6 +4,8 @@ import About from '../../../Components/UserComponents/AboutSection/About';
 import ArticlePage from '../../../Components/UserComponents/ArticlePage/ArticlePage'
 import DoctorPage from '../../../Components/UserComponents/DoctorPage/DoctorPage'
 import BeginningSection from '../../../Components/UserComponents/BeginningSection/BeginningSection'
+import TestimonialsSlider from '../../../Components/UserComponents/TestimonialsSlider/TestimonialsSlider';
+import TestimonialSlider from '../../../Components/UserComponents/TestimonialsContainer/TestimonialSlider';
 
 const HomePage = () => {
 
@@ -12,7 +14,7 @@ const HomePage = () => {
       <BeginningSection/>
       <DoctorPage/>
       <ArticlePage/>
-      {/* <TestimonialsSlider/> */}
+      {/* <TestimonialSlider/> */}
     </div>
   )
 }

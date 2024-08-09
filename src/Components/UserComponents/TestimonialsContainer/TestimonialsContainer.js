@@ -12,7 +12,7 @@ const TestimonialsContainer = () => {
 
     return (
         <div className='container'>
-            <div className='row w-75 testimonials-container'>
+            <div className='row w-100 testimonials-container'>
             <div className='col-md-2 '></div>
                 <div className='col-md-2 left-testmonial'>
                     <TestmonialsBox testmonialText={testmonials[0]} bgColor="var(--secondary-bg-color)" triangleColor="var(--secondary-bg-color)" quote={"assets/svg/blue-quote-line.svg"} />
