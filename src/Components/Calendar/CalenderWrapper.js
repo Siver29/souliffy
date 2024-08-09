@@ -25,7 +25,7 @@ function CalenderWrapper({ onDateChange }) {
         tileClassName={({ date, view }) => 
           date.toLocaleDateString() === today.toLocaleDateString() ? 'today' : ''
         }
-        className="calendar mb-3"
+        className="calendar mb-3 "
       />
       <p>التاريخ الذي أخترته هو : {date}</p>
     </div>

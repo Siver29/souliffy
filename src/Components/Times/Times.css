@@ -4,5 +4,8 @@
     width: 100px;
 }
 .timeCard:hover{
-    background-color: var(--secondary-green-color);
+    background-color: var(--secondary-green-color) !important;
+}
+.timeCard:focus{
+    background-color: var(--secondary-green-color) !important;
 }
