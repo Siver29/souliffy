@@ -4,7 +4,7 @@ import './BeginningSection.css'
 
 const BeginningSection = () => {
     return (
-        <div className='container-fluid pt-4 pb-5 beginning-section'>
+        <div className='container-fluid pt-5 pb-5 beginning-section'>
             <div className='row'>
                 <h3 className='text-center'>كيف بدأنا؟</h3>
                 <p className='text-center fs-5 mt-1 mb-5'>انطلقنا من إيماننا العميق بضرورة توفير الدعم النفسي المتخصص للمجتمع،

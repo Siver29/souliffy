@@ -37,7 +37,7 @@ const DoctorPage = () => {
     ];
 
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid mt-5'>
             <div className='row'>
                 {/* <div className="left-doctor-page-triangle col-sm-6 "></div>
                 <div className="right-doctor-page-triangle col-sm-6 "></div> */}

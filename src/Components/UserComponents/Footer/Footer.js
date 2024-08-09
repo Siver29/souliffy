@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 
 const Footer = () => {
+
+
   return (
     <div className="container-fluid footer p-4">
       <div className="container h-75">
@@ -34,30 +36,31 @@ const Footer = () => {
             <div className='container'>
               <div className='row'>
                 <div className="col-md-6 col-12">
-                  <p className='text-end'>
-                    <img src='assets/svg/round-phone.svg' alt='Phone' /> (123) 456-7890
-                  </p>
+                  <a href="tel:+963937451138" className="text-dark">
+                    <p className='text-end'>
+                      <img src='assets/svg/round-phone.svg' alt='Phone' /> 963937451138
+                    </p>
+                  </a>
                 </div>
                 <div className="col-md-6 col-12">
-                  <p className='text-end'>
-                    <img src='assets/svg/round-local-printshop.svg' alt='Fax' /> (123) 456-7890
-                  </p>
+                  <a href="mailto:souliffy@gmail.com" className="text-dark">
+                    <p className='text-end'>
+                      <img src='assets/svg/gmail-icon.svg' alt='Gmail' /> souliffy@gmail.com
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
             <div className="row text-center">
               <div className="container">
                 <div className='row'>
-                  <div className='col-4'>
-                    <p>مواقع التواصل</p>
-                  </div>
                   <div className='col-2'>
-                    <a href="https://www.facebook.com" className="text-dark ">
+                    <a href="https://www.facebook.com/profile.php?id=61563397493513&mibextid=ZbWKwL" target="_blank" className="text-dark ">
                       <img src='assets/svg/facebook.svg' alt='Facebook' />
                     </a>
                   </div>
                   <div className='col-2'>
-                    <a href="https://www.instagram.com" className="text-dark">
+                    <a href="https://www.instagram.com/souliffyplatform?igsh=MWRjM3RrZXFza2tkYg==" target="_blank" className="text-dark">
                       <img src='assets/svg/instagram.svg' alt='Instagram' />
                     </a>
                   </div>
@@ -68,14 +71,8 @@ const Footer = () => {
 
         </div>
         {/* ............... */}
-        <div className="row mt-5  latest-footer">
-          <div className="col-12 col-md-6">
-            <div className="d-flex justify-content-around align-items-center">
-              <a href="#about" className="text-dark footer-links">ABOUT US</a>
-              <a href="#platform" className="text-dark footer-links">PLATFORM</a>
-            </div>
-          </div>
-          <div className="col-12 col-md-6 text-center">
+        <div className="row mt-5 latest-footer">
+          <div className="col-12 w-100      col-md-6 text-center">
             Copyright © 2024
             <a href="https://souliffy.com" className="text-dark"> Souliffy.com </a>, All Right Reserved
           </div>

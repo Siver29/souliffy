@@ -24,7 +24,7 @@ const ArticlePage = () => {
 
       
   return (
-    <div className='container article-page'>
+    <div className='container article-page mt-5 mb-5'>
         <div className='row'>
             <h3 className='text-center'>مقالات</h3>
             <p className='text-center fs-5 mt-1'>نقدم لك مجموعة من المقالات المتخصصة التي تغطي مواضيع متنوعة تهمك وتساعدك على فهم نفسك بشكل أفضل والتغلب على التحديات النفسية.</p>
