@@ -1,5 +1,6 @@
 import React from 'react';
 import Doctor from '../Doctor/Doctor';
+import './DoctorPage.css'
 
 const DoctorPage = () => {
     const doctors = [
@@ -36,9 +37,13 @@ const DoctorPage = () => {
     ];
 
     return (
-        <div className='container'>
+        <div className='container-fluid'>
             <div className='row'>
-                <div className='col-12'>
+                {/* <div className="left-doctor-page-triangle col-sm-6 "></div>
+                <div className="right-doctor-page-triangle col-sm-6 "></div> */}
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-12'>
                     <h3 className='text-center'>فريقنا الطبي</h3>
                     <p className='text-center fs-5 mt-1'>نؤمن بأن جودة الدعم النفسي تعتمد بشكل كبير على كفاءة وخبرة الأطباء والمختصين الذين يقدمون هذا الدعم. لذلك، حرصنا على بناء فريق من أفضل الأطباء النفسيين وأخصائيي الصحة النفسية ، الذين يمتلكون الخبرة والمعرفة العميقة في مجال الصحة النفسية.</p>
                 </div>
@@ -53,6 +58,8 @@ const DoctorPage = () => {
                         />
                     </div>
                 ))}
+                </div>
+                    </div>
                 </div>
             </div>
         </div>

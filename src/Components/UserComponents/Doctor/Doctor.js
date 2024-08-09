@@ -3,7 +3,7 @@ import './Doctor.css';
 
 const Doctor = ({ name, specialization, skills, imgSrc }) => {
     return (
-        <div className="container mt-1 Doctor shadow-lg">
+        <div className="container mt-1 Doctor shadow-lg w-75">
             <div className="row align-items-center">
                 <div className="col-md-8">
                     <h5 className='text-end doctor-name'>{name}</h5>

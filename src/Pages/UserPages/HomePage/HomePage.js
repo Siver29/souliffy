@@ -6,16 +6,14 @@ import TestimonialsContainer from '../../../Components/UserComponents/Testimonia
 import TestimonialsSlider from '../../../Components/UserComponents/TestimonialsSlider/TestimonialsSlider'
 import Article from '../../../Components/UserComponents/Article/Article'
 import ArticlePage from '../../../Components/UserComponents/ArticlePage/ArticlePage'
-import Doctor from '../../../Components/UserComponents/Doctor/Doctor'
 import DoctorPage from '../../../Components/UserComponents/DoctorPage/DoctorPage'
+import BeginningSection from '../../../Components/UserComponents/BeginningSection/BeginningSection'
 
 const HomePage = () => {
 
   return (
     <div>
-      {/* <Navbar/> */}
-      {/* <TestimonialsContainer/> */}
-      {/* <Article/> */}
+      <BeginningSection/>
       <DoctorPage/>
       <ArticlePage/>
       {/* <TestimonialsSlider/> */}

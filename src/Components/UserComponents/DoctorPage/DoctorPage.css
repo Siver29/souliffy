@@ -1,0 +1,38 @@
+.left-doctor-page-triangle {
+    position: relative;
+    /* width: 50%; */
+    height: 100px;
+    /* transform: rotate(200deg); */
+}
+
+.left-doctor-page-triangle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:  100px  690px 0 0;
+    border-color: var(--secondary-bg-color) transparent transparent transparent;
+    transform: scaleX(-1);
+}
+
+.right-doctor-page-triangle{
+    position: relative;
+    /* width: 50%; */
+    height: 100px;
+}
+
+.right-doctor-page-triangle:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 690px 0 0;
+    border-color: var(--secondary-bg-color) transparent transparent transparent;
+}
