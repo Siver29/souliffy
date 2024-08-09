@@ -1,11 +1,18 @@
 .swiper_container {
   height: 500px; /* Adjust the height to your liking */
+  opacity: 1;
+  
+}
+.swiper-slide-prev {
+  background-color: red;
+  opacity: 1;
 }
 .swiper-slide:not(.swiper-slide-active) {
   /* filter: grayscale(100%); */
+  background-color: transparent;
   opacity: 1;
 }
 
-.swiper-slide:not(.swiper-slide-active) .testimonial-box {
-  background-color: var(--inactive-slide-color);
+.swiper-slide-shadow-right .swiper-slide-shadow-coverflow{
+  opacity: 1;
 }
