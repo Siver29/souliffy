@@ -1,0 +1,9 @@
+.about{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.aboutContainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

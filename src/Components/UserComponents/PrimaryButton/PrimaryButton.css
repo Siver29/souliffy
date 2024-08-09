@@ -5,11 +5,10 @@
 }
 
 .primary-btn:hover {
-    background-color: var(--secondary-green-color) !important;
-    color: white;
+    background-color: var(--secondary-pink-color) !important;
+    color: white !important;
 }
 
 .primary-btn:active {
-    background-color: var(--primary-blue-active-color) !important;
-    /* Define an active (click) color */
+    background-color: var(--primary-blue-color) !important;
 }

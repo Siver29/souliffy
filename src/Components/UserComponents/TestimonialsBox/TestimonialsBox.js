@@ -42,7 +42,7 @@ function TestmonialsBox({ testmonialText, bgColor, triangleColor, quote, title }
                     <div className='col-8'></div>
                 </div>
             </div>
-            {title && <h2>{title}</h2>}
+            {title && <h3 className='mb-5'>{title}</h3>}
             <p className="quote-text">
                 {testmonialText}
             </p>

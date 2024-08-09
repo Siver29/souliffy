@@ -5,6 +5,7 @@ import ArticlePage from '../../../Components/UserComponents/ArticlePage/ArticleP
 import DoctorPage from '../../../Components/UserComponents/DoctorPage/DoctorPage'
 import TestimonialsSlider from '../../../Components/UserComponents/TestimonialsSlider/TestimonialsSlider';
 import TestimonialSlider from '../../../Components/UserComponents/TestimonialsContainer/TestimonialSlider';
+import Services from '../../../Components/UserComponents/ServicesSection/Services';
 
 const HomePage = () => {
 
@@ -13,9 +14,14 @@ const HomePage = () => {
       <Hero/>
       {/* <TestimonialsContainer/> */}
       <About/>
+      <Services/>
       {/* <Article/> */}
       <DoctorPage/>
       <ArticlePage/>
+      {/* <TestimonialSlider/> */}
+      {/* <DoctorPage/> */}
+      {/* <ArticlePage/> */}
+      {/* <TestimonialsSlider/> */}
       <TestimonialSlider/>
     </div>
   )
