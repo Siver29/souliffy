@@ -30,7 +30,7 @@ function TestmonialsBox({ testmonialText, bgColor, triangleColor, quote, title }
     };
 
     return (
-        <div className="quote-shape" style={{ backgroundColor: bgColor }}>
+        <div className="quote-shape mx-auto" style={{ backgroundColor: bgColor }}>
             <div style={triangleStyleBefore}></div>
             <div style={triangleStyleAfter}></div>
             <div className='container-fluid mt-3'>
