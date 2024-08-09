@@ -6,6 +6,7 @@
 
 .primary-btn:hover {
     background-color: var(--secondary-green-color) !important;
+    color: white;
 }
 
 .primary-btn:active {
