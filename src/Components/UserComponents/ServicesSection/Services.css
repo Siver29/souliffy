@@ -1,0 +1,35 @@
+h2, h3 {
+    font-family: "Tajawal", sans-serif;
+}
+.first-title{
+    color: var(--secondary-green-color);
+}
+.second-title{
+    color: var(--secondary-pink-color);
+}
+.third-title{
+    color: var(--primary-blue-color);
+}
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+@media (max-width: 767.98px) {
+    h2, h3 {
+        text-align: center;
+    }
+
+    .img-fluid {
+        margin-bottom: 20px;
+    }
+}

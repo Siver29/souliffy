@@ -1,35 +1,18 @@
-.testimonial-slider {
-  height: 400px;
-  border-radius: 12px;
-  padding: 20px;
-  padding-bottom: 40px;
-  box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
+.swiper_container {
+  height: 500px; /* Adjust the height to your liking */
+  opacity: 1;
+  
+}
+.swiper-slide-prev {
+  background-color: red;
+  opacity: 1;
+}
+.swiper-slide:not(.swiper-slide-active) {
+  /* filter: grayscale(100%); */
+  background-color: transparent;
+  opacity: 1;
 }
 
-.testimonial-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  transform-origin: left 50%;
-  background: inherit;
-  z-index: var(--z);
-  transition: .3s ease-out;
-}
-
-.testimonial-content {
-  position: absolute;
-  top: 70%;
-  left: 4%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color: hsla(var(--h) var(--s) var(--l) / .8);
-  text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+.swiper-slide-shadow-right .swiper-slide-shadow-coverflow{
+  opacity: 1;
 }
