@@ -4,7 +4,7 @@ import PrimaryButton from '../PrimaryButton/PrimaryButton';
 
 const Hero = () => {
   return (
-    <div className="container">
+    <div className="container" id='hero'>
       <div className="row align-items-center">
         <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-right">
           <h1 className="display-4 rtl-text"> {/* Added rtl-text class */}

@@ -152,3 +152,27 @@ a:hover, a:focus {
 .quote_btn-container a span {
   margin-right: 5px;
 }
+
+
+@media (max-width: 768px) {
+  .custom_nav-container .navbar-nav {
+    flex-direction: column;
+  }
+  .custom_nav-container .nav-item {
+    margin-bottom: 10px;
+  }
+  .custom_nav-container .nav-link {
+    padding: 10px;
+  }
+}
+/* .sticky {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1140px; 
+  margin: 0 auto;
+  z-index: 99999;
+  background-color: #ffffff; 
+} */

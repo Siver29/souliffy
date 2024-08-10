@@ -12,7 +12,7 @@ const Illness = ({ imageSrc, titleText, numberText, backgroundColor, height }) =
     };
 
     return (
-        <div className='illness-card' style={illnessCardStyle}>
+        <div className='illness-card mx-auto mb-5' style={illnessCardStyle}>
             <img src={imageSrc} alt="Depression illustration" className='illness-img' />
             <div className='illness-text'>
                 <div className='illness-title'>{titleText}</div>

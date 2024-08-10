@@ -3,7 +3,7 @@ import './Services.css'; // استخدم هذا الملف لتطبيق أي ت�
 
 const Services = () => {
   return (
-    <div className="container my-5">
+    <div className="container my-5" id='services'>
       <h2 className="text-center mb-4">كيف نعمل؟</h2>
       <p className="text-center mb-1">في Souliffy، نؤمن بأن الصحة النفسية هي الأساس الذي يبني حياة سعيدة ومتوازنة.</p>
       <p className="text-center mb-5">نحن هنا لمساعدتك على تحقيق العناية النفسية من خلال خدمات متخصصة وموثوقة.</p>
