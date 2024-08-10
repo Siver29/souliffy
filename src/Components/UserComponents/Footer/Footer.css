@@ -15,6 +15,11 @@
   }
   .btn-submit:hover{
     background-color: var(--secondary-green-color) ;
+    color: var(--primary-bg-color);
+  }
+  .btn-submit:active{
+    background-color: var(--secondary-green-color) ;
+    color: var(--primary-bg-color);
   }
   .contact-form{
     height: 100px;

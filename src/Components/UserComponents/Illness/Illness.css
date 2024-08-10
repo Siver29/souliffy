@@ -1,0 +1,25 @@
+.illness-img {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+}
+
+.illness-title {
+    margin-top: auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.illness-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+.illness-text{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary-font-color);
+}

@@ -1,0 +1,27 @@
+.beginning-section {
+    background-color: var(--secondary-bg-color);
+    /* width: 100vw; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.illnesses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.illness2 {
+    position: relative;
+    top: 50px;
+}
+.illness3 {
+    position: relative;
+    top: 100px;
+}
+.illness4 {
+    position: relative;
+    top: 150px;
+}
