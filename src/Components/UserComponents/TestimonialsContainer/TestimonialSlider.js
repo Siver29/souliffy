@@ -44,8 +44,8 @@ function TestimonialSlider() {
   ];
 
   return (
-<div className="container">
-      <h1 className="heading">آراء المستخدمين</h1>
+<div className="container mt-5">
+      <h1 className="heading mb-5">آراء المستخدمين</h1>
       <Swiper
         // onSlideChange={handleSlideChange}
         effect={'coverflow'}
