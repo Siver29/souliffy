@@ -3,11 +3,11 @@ import './Doctor.css';
 
 const Doctor = ({ name, specialization, skills, imgSrc }) => {
     return (
-        <div className="container mt-1 Doctor shadow-lg w-75">
+        <div className="container mt-1 Doctor shadow-lg w-75 pt-3">
             <div className="row align-items-center">
                 <div className="col-md-8">
                     <h5 className='text-end doctor-name'>{name}</h5>
-                    <h6 className="text-end specialization">{specialization}</h6>
+                    <h6 className="text-end specialization mb-3">{specialization}</h6>
                     <ul className="text-end skills">
                         {skills.map((skill, index) => (
                             <li key={index}>{skill}</li>

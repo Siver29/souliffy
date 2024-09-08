@@ -24,6 +24,11 @@ p{
   font-family: "Tajawal", sans-serif !important;
 }
 
+.secondary-pink-background {
+  background-color: var(--secondary-pink-color) !important;
+  font-family: "Tajawal", sans-serif !important;
+}
+
 
 body {
   margin: 0;

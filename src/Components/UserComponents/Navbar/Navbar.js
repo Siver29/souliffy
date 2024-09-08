@@ -7,7 +7,7 @@ import PrimaryButton from '../PrimaryButton/PrimaryButton';
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
     const [activeLink, setActiveLink] = useState('/');
-    const [sticky, setSticky] = useState(false); // Add a state for sticky
+    const [sticky, setSticky] = useState(false);
     const location = useLocation();
   
     useEffect(() => {
@@ -38,7 +38,7 @@ const Navbar = () => {
             <header className="header_section long_section px-0 ">
                 <nav className="navbar navbar-expand-lg custom_nav-container">
                     <a className="navbar-brand" href="/" onClick={() => handleLinkClick('/')}>
-                        <img className='img-fluid' width='110' src='./Assets/img/souliffy-logo-primary-text-color.png' alt="Souliffy Logo"/>
+                        <img className='img-fluid' width='110' src='./assets/img/souliffy-logo-primary-text-color.png' alt="Souliffy Logo"/>
                     </a>
                     <button className="navbar-toggler" type="button" onClick={handleToggle} aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className=""> </span>
@@ -62,6 +62,9 @@ const Navbar = () => {
                                 <li className={`nav-item ${activeLink === '#articles' ? 'active' : ''}`}>
                                     <a className={`nav-link ${activeLink === '#articles' ? 'active' : ''}`} href="#articles" onClick={() => handleLinkClick('#articles')}>مقالات</a>
                                 </li>
+                                <div className="d-md-none d-sm-block">
+                                    <PrimaryButton/>
+                                </div>
                                 </>
                             )}
                             {/* <li className="nav-item">

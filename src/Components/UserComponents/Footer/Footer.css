@@ -14,11 +14,11 @@
     color: var(--primary-font-color);
   }
   .btn-submit:hover{
-    background-color: var(--secondary-green-color) ;
+    background-color: var(--secondary-pink-color) ;
     color: var(--primary-bg-color);
   }
   .btn-submit:active{
-    background-color: var(--secondary-green-color) ;
+    background-color: var(--secondary-pink-color) ;
     color: var(--primary-bg-color);
   }
   .contact-form{
@@ -27,6 +27,13 @@
   .textarea-height{
     height: 75px;
   }
+  .gmailIcon{
+    margin-left: 5px;
+  }
+  .latest-footer{
+    margin-top: 20px;
+    padding: 20px 0;
+  }
   @media (max-width: 768px) {
     .footer {
       background-color: #F5F5F5;
@@ -34,5 +41,11 @@
     }
     .contact-info{
       padding-top: 140px;
+    }
+    .footerIcon{
+      height: 30px;
+    }
+    .latest-footer{
+      margin-top: 60px;
     }
   }

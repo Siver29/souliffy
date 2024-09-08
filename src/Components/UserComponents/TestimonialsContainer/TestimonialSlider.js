@@ -38,9 +38,9 @@ function TestimonialSlider() {
   //   }
   // }, [currentSlide]);
   const testimonials = [
-    "Souliffy أعادت لي شغفي بالحياة وأبعدت عني الاكتئاب.",
-    "التوتر والقلق اختفوا بعد انضمامي لـ Souliffy. الدعم هنا غير حياتي",
-    "تعلمت كيفية التعامل مع التوتر وزيادة قوتي النفسية بفضل Souliffy"
+    " هنا ستظهر آرائكم شاركنا رأيك عن طريق الواتساب او قسم التواصل.",
+    " هنا ستظهر آرائكم شاركنا رأيك عن طريق الواتساب او قسم التواصل.",
+    " هنا ستظهر آرائكم شاركنا رأيك عن طريق الواتساب او قسم التواصل."
   ];
 
   return (
@@ -98,9 +98,6 @@ function TestimonialSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <TestimonialsBox testmonialText={testimonials[2]} bgColor="var(--primary-blue-color)" triangleColor="var(--primary-blue-color)" quote={"assets/svg/quote-line.svg"}/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <TestimonialsBox testmonialText={testimonials[0]} bgColor="var(--secondary-bg-color)" triangleColor="var(--secondary-bg-color)" quote={"assets/svg/blue-quote-line.svg"}/>
         </SwiperSlide>
 
         <div className="slider-controler">

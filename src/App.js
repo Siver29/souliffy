@@ -3,6 +3,7 @@ import HomePage from './Pages/UserPages/HomePage/HomePage';
 import Reservation from './Pages/Reservation/Reservation';
 import Navbar from './Components/UserComponents/Navbar/Navbar'
 import Footer from './Components/UserComponents/Footer/Footer';
+import ScrollToTop from './Components/UserComponents/ScrollToTop/ScrollToTop';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/reservation" element={<Reservation />} />
         </Routes>
         <Footer />
+        {/* <ScrollToTop/> */}
       </div>
     </BrowserRouter>
   );

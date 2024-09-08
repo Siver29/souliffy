@@ -1,4 +1,4 @@
-import React , { useState } from 'react'
+import React, { useState } from 'react'
 import CalenderWrapper from '../../Components/Calendar/CalenderWrapper'
 import Times from '../../Components/Times/Times'
 import ReservationForm from '../../Components/ReservationForm/ReservationForm'
@@ -21,25 +21,27 @@ function Reservation() {
     <section className='reservation-page'>
       <div className='container reservation-bg'>
         <div className='row'>
-          <div className='col-12 col-md-6'>
-            <div className=' w-100 mt-5'>
-              <CalenderWrapper onDateChange={handleDateSelect}/>
-            </div>
-            <div className=' w-100 mb-5'>
-              <p>إختر الوقت</p>
-              <div className='row'>
-                {times.map((time, index) => (
-                  <Times key={index} time={time} onSelect={handleTimeSelect} />
-                ))}
-              </div>
-              {selectedTime && <p>الوقت الذي إخترته هو : {selectedTime}</p>}
+          <div className='col-12 col-md-6 d-flex align-items-center justify-content-center'>
+            <div className='pt-5 '>
+              <ReservationNote />
             </div>
           </div>
-          <div className='col-12 col-md-6 p-5'>
-            <div className=''>
-              <ReservationNote/>
-              <ReservationForm time={selectedTime} date={selectedDate}/>
+          <div className='col-12 col-md-6'>
+          <div className=' w-100 mt-5'>
+              <CalenderWrapper onDateChange={handleDateSelect} date={selectedDate} />
+              {selectedDate && <p>التاريخ الذي أخترته هو : {selectedDate}</p>}
             </div>
+          <div className=' w-100 mb-5'>
+                <p>إختر الوقت</p>
+                <div className='row'>
+                  {times.map((time, index) => (
+                    <Times key={index} time={time} onSelect={handleTimeSelect} />
+                  ))}
+                </div>
+                {selectedTime && <p>الوقت الذي إخترته هو : {selectedTime}</p>}
+              </div>
+
+            <ReservationForm time={selectedTime} date={selectedDate} handleTimeSelect={setSelectedTime} handleDateSelect={setSelectedDate} />
           </div>
         </div>
       </div>

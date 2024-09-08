@@ -22,17 +22,22 @@ const Footer = () => {
     emailjs.send('service_2wflc7o', 'template_ga4wepl', formData, 'ZMs03pDmb_azX7Bl5')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        alert('Message sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        })
+        alert('تم إرسال رسالتكم بنجاح');
       })
       .catch((err) => {
         console.log('FAILED...', err);
-        alert('Failed to send the message, please try again.');
+        alert('حدث خطأ أثناء ارسال الرسالة , أعد الإرسال من فضلك');
       });
   };
 
   return (
     <div className="container-fluid footer p-4">
-      <div className="container h-75">
+      <div className="container h-100">
         {/* ........... */}
         <div className='row h-100'>
           {/* contact us */}
@@ -71,7 +76,8 @@ const Footer = () => {
             </form>
           </div>
           {/* contact info */}
-          <div className="contact-info col-md-6 col-sm-12 text-dark">
+          <div className="contact-info col-md-6 col-12 text-dark container">
+            <div className='row'></div>
             <div className="col-md-6">
               <p className='text-end place'>
                 <img className='' src='assets/svg/round-place.svg' alt='Location' /> سورية، دمشق
@@ -89,7 +95,7 @@ const Footer = () => {
                 <div className="col-md-6 col-12">
                   <a href="mailto:souliffy@gmail.com" className="text-dark">
                     <p className='text-end'>
-                      <img src='assets/svg/gmail-icon.svg' alt='Gmail' /> souliffy@gmail.com
+                      <img src='assets/svg/gmail-icon.svg' alt='Gmail' className='gmailIcon'/> souliffy@gmail.com
                     </p>
                   </a>
                 </div>
@@ -97,15 +103,15 @@ const Footer = () => {
             </div>
             <div className="row text-center">
               <div className="container">
-                <div className='row'>
+                <div className='row mb'>
                   <div className='col-2'>
                     <a href="https://www.facebook.com/profile.php?id=61563397493513&mibextid=ZbWKwL" target="_blank" className="text-dark ">
-                      <img src='assets/svg/facebook.svg' alt='Facebook' />
+                      <img src='assets/svg/facebook.svg' alt='Facebook' className='footerIcon'/>
                     </a>
                   </div>
                   <div className='col-2'>
                     <a href="https://www.instagram.com/souliffyplatform?igsh=MWRjM3RrZXFza2tkYg==" target="_blank" className="text-dark">
-                      <img src='assets/svg/instagram.svg' alt='Instagram' />
+                      <img src='assets/svg/instagram.svg' alt='Instagram' className='footerIcon'/>
                     </a>
                   </div>
                 </div>
@@ -115,8 +121,8 @@ const Footer = () => {
 
         </div>
         {/* ............... */}
-        <div className="row mt-5 latest-footer">
-          <div className="col-12 w-100      col-md-6 text-center">
+        <div className="row latest-footer">
+          <div className="col-12 w-100 col-md-6 text-center">
             Copyright © 2024
             <a href="https://souliffy.com" className="text-dark"> Souliffy.com </a>, All Right Reserved
           </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const PrimaryButton = () => {
   return (
-    <div>
+    <div className='w-100'>
       <Link to={'/reservation'}>
       <button className="primary-btn btn primary-blue-background">
       احجز الآن

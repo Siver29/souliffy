@@ -3,14 +3,12 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './CalenderWrapper.css'
 
-function CalenderWrapper({ onDateChange }) {
-  const [date, setDate] = useState(null);
+function CalenderWrapper({ onDateChange ,date }) {
   const today = new Date();
 
   const onChange = (date) => {
     if (date >= today) {
       const formattedDate = date.toLocaleDateString('en-CA');
-      setDate(formattedDate);
       onDateChange(formattedDate);
     }
   };
@@ -25,9 +23,8 @@ function CalenderWrapper({ onDateChange }) {
         tileClassName={({ date, view }) => 
           date.toLocaleDateString() === today.toLocaleDateString() ? 'today' : ''
         }
-        className="calendar mb-3 "
+        className="calendar mb-3"
       />
-      <p>التاريخ الذي أخترته هو : {date}</p>
     </div>
   );
 }

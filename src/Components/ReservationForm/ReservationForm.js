@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 
-export default function ReservationForm({date , time}) {
+export default function ReservationForm({date , time , handleDateSelect , handleTimeSelect}) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
   const [error, setError] = useState('')
+  const [ip, setIp] = useState('');
 
   const handleNameChange = (event) => {
     setName(event.target.value)
@@ -26,28 +27,44 @@ export default function ReservationForm({date , time}) {
         setError('يرجى إدخال رقم هاتف صحيح مكون من 10 أرقام')
         return
       }
-      console.log('start')
-      const templateParams = {
-        name: name,
-        phone: phone,
-        date: date,
-        time: time,
-      };
-
-      emailjs.send(
-        'service_5vgud6g',
-        'template_4pkshdn',
-        templateParams,
-        'Xj7mw436AqKgkWDfb'
-      ).then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-        },
-        (err) => {
-          console.log('FAILED...', err);
-        }
-      );
-    }else{
+      fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+          setIp(data.ip);
+          console.log(data.ip);
+          const templateParams = {
+            name: name,
+            phone: phone,
+            date: date,
+            time: time,
+            ip: data.ip, // use the fetched IP address here
+          };
+          emailjs.send(
+            'service_5vgud6g',
+            'template_4pkshdn',
+            templateParams,
+            'Xj7mw436AqKgkWDfb'
+          ).then(
+            (response) => {
+              alert('تم تسجيل حجز موعد بنجاح')
+              setName('')
+              setPhone('')
+              handleDateSelect('')
+              handleTimeSelect('')
+              setIp('')
+              setError('')
+              // console.log('SUCCESS!', response.status, response.text);
+            },
+            (err) => {
+              alert('لم يتم تسجيل حجز موعد , يرجى إعادة المحاولة')
+              // console.log('FAILED...', err);
+            }
+          );
+        })
+        .catch(error => {
+          alert('لم يتم تسجيل حجز موعد , يرجى إعادة المحاولة')
+        });
+    } else {
       setError('يرجى إختيار تاريخ ووقت')
     }
   };
@@ -57,7 +74,8 @@ export default function ReservationForm({date , time}) {
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-4">
           <label for="exampleInputName" className='mb-2'>الإسم</label>
-          <input type="text" className="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="أدخل اسمك" value={name} onChange={handleNameChange} />
+          <input type="text" className="form-control mb-2" id="exampleInputName" aria-describedby="nameHelp" placeholder=" أدخل اسمك " value={name} onChange={handleNameChange} />
+          <p className='h6'>يمكنك إدخال اسم مستعار لضمان سرية هويتك</p>
         </div>
         <div className="form-group mb-4">
           <label for="exampleInputphone" className='mb-2'>رقم الهاتف</label>

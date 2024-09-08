@@ -10,7 +10,7 @@ const Services = () => {
 
       <div className="row mb-5">
         <div className="col-md-6">
-          <img src="/Assets/svg/Online-test.svg" alt="التقييم الأولي" className="img-fluid" />
+          <img src="/assets/svg/Online-test.svg" alt="التقييم الأولي" className="img-fluid" />
         </div>
         <div className="col-md-6 d-flex flex-column justify-content-center">
           <h3 className="first-title">1. التقييم الأولي</h3>
@@ -23,7 +23,7 @@ const Services = () => {
 
       <div className="row mb-5">
         <div className="col-md-6 order-md-2">
-          <img src="/Assets/svg/Online-review.svg" alt="جلسات علاجية" className="img-fluid" />
+          <img src="/assets/svg/Online-review.svg" alt="جلسات علاجية" className="img-fluid" />
         </div>
         <div className="col-md-6 order-md-1 d-flex flex-column justify-content-center">
           <h3 className="second-title">2. جلسات علاجية</h3>
@@ -36,7 +36,7 @@ const Services = () => {
 
       <div className="row">
         <div className="col-md-6">
-          <img src="/Assets/svg/Team-checklist.svg" alt="مهام يومية ومتابعة" className="img-fluid" />
+          <img src="/assets/svg/Team-checklist.svg" alt="مهام يومية ومتابعة" className="img-fluid" />
         </div>
         <div className="col-md-6 d-flex flex-column justify-content-center">
           <h3 className="third-title">3. مهام يومية ومتابعة</h3>
