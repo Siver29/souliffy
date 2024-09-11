@@ -8,16 +8,16 @@ const About = () => {
       <div className="row gy-4">
         <div className="col-lg-4 col-12 about">
           <TestimonialsBox 
-            title="رؤيتنا"
-            testmonialText="نسعى لأن نكون مرجعك الأول في الصحة النفسية. نؤمن بأن كل شخص يستحق الرعاية اللازمة"
+            title="رسالتنا"
+            testmonialText="نحن ملتزمون بتقديم الدعم النفسي اللازم للأفراد من خلال خدمات استشارية متخصصة ومبتكرة."
             bgColor="#EAEAFF"
             triangleColor="#EAEAFF"
           />
         </div>
         <div className="col-lg-4 col-12 about">
           <TestimonialsBox 
-            title="رسالتنا"
-            testmonialText="نحن ملتزمون بتقديم الدعم النفسي اللازم للأفراد من خلال خدمات استشارية متخصصة ومبتكرة."
+            title="رؤيتنا"
+            testmonialText="نسعى لأن نكون مرجعك الأول في الصحة النفسية. نؤمن بأن كل شخص يستحق الرعاية اللازمة"
             bgColor="#C8E6F4"
             triangleColor="#C8E6F4"
           />
