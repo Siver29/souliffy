@@ -4,11 +4,16 @@ import emailjs from 'emailjs-com';
 export default function ReservationForm({date , time , handleDateSelect , handleTimeSelect}) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
+  const [birthDate, setBirthDate] = useState('')
   const [error, setError] = useState('')
   const [ip, setIp] = useState('');
 
   const handleNameChange = (event) => {
     setName(event.target.value)
+  }
+
+  const handleBirthDateChange = (event) => {
+    setBirthDate(event.target.value)
   }
 
   const handlePhoneChange = (event) => {
@@ -35,6 +40,7 @@ export default function ReservationForm({date , time , handleDateSelect , handle
           const templateParams = {
             name: name,
             phone: phone,
+            birthDate : birthDate,
             date: date,
             time: time,
             ip: data.ip, // use the fetched IP address here
@@ -78,8 +84,12 @@ export default function ReservationForm({date , time , handleDateSelect , handle
           <p className='h6'>يمكنك إدخال اسم مستعار لضمان سرية هويتك</p>
         </div>
         <div className="form-group mb-4">
+          <label for="exampleInputName" className='mb-2'>تاريخ الميلاد</label>
+          <input type="date" className="form-control text-end" id="exampleInputBirthDate" value={birthDate} onChange={handleBirthDateChange} />
+        </div>
+        <div className="form-group mb-4">
           <label for="exampleInputphone" className='mb-2'>رقم الهاتف</label>
-          <input type="text" className="form-control" id="exampleInputphone" placeholder="أدخل رقم الهاتف الذي تفضل أن يتم التواصل معك من خلاله" value={phone} onChange={handlePhoneChange} />
+          <input type="text" className="form-control" id="exampleInputphone" placeholder="الرقم الخاص بالواتساب حيث سيتم التواصل معكم من خلاله" value={phone} onChange={handlePhoneChange} />
         </div>
         <button type="submit" className="primary-btn btn primary-blue-background ">إحجز الآن</button>
       </form>
