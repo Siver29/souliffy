@@ -1,7 +1,7 @@
 export const articles = [
     {
         id: 1,
-        img: '/assets/svg/article1.svg',
+        img: '/assets/svg/leader-pana.svg',
         title: 'متلازمة المحتال .. الخوف من الفشل في ظل النجاح',
         brief:'هل شعرت مسبقًا بأنك لا تنتمي لمكان العمل بالرغم من استحقاقك لذلك؟...',
         content: (
@@ -168,7 +168,7 @@ export const articles = [
     },
     {
         id: 2,
-        img: '/assets/svg/article2.svg',
+        img: '/assets/svg/restlessness.svg',
         title: 'الأرق',
         brief:'الأرق اضطراب من اضطرابات النوم الشائعة التي يصعب معه الخلود إلى النوم أو الاستغراق فيه...',
         content: (
@@ -326,7 +326,7 @@ export const articles = [
     },
     {
         id: 3,
-        img: '/assets/svg/article3.svg',
+        img: '/assets/svg/emotional-intelligence.svg',
         title: 'الذّكاء العاطفي Emotional intelligence',
         brief:'ماذا يعني مصطلح الذّكاء العاطفي ، و متى ذُكر لأوّل مرّة ؟...',
         content: (
@@ -484,7 +484,7 @@ export const articles = [
     },
     {
         id: 4,
-        img: '/assets/svg/article3.svg',
+        img: '/assets/img/suicide.png',
         title: 'اليوم العالمي لمحاربة الانتحار – لنتحدث، لنتواصل، لننقذ الأرواح',
         brief:'في 10 سبتمبر من كل عام، يجتمع العالم لإحياء اليوم العالمي لمحاربة الانتحار بهدف...',
         content: (
@@ -564,7 +564,7 @@ export const articles = [
     },
     {
         id: 5,
-        img: '/assets/svg/article3.svg',
+        img: '/assets/img/emotional-attachment.jpg',
         title: 'التعلق العاطفي المرضي، كيف نعالج هذا التعلق، وكيف نتعامل مع هذا المرض',
         brief:'سيكولوجية التعلق : ماهو التعلق ؟ وكيف يحصل ؟',
         content: (
@@ -663,7 +663,7 @@ export const articles = [
     },
     {
         id: 6,
-        img: '/assets/svg/article3.svg',
+        img: '/assets/svg/personality-disorder.svg',
         title: 'Borderline personality disorder، ما هو اضطراب الشخصية الحدية؟',
         brief:'اضطراب الشخصية الحدية هو مرض عقلي يؤثر بشدة على قدرة الشخص على إدارة عواطفه...',
         content: (

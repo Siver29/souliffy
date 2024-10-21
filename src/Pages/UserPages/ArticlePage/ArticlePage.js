@@ -1,5 +1,6 @@
 import React from 'react';
 import { useArticle } from '../../../hooks/useArticle';
+import '../ArticlePage/ArticlePage.css'
 
 const ArticlePage = () => {
   const article = useArticle();
