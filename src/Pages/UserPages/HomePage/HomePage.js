@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../../../Components/UserComponents/HeroSection/Hero'
 import About from '../../../Components/UserComponents/AboutSection/About';
-import ArticlePage from '../../../Components/UserComponents/ArticlePage/ArticlePage'
+import ArticleSection from '../../../Components/UserComponents/ArticleSection/ArticleSection'
 import DoctorPage from '../../../Components/UserComponents/DoctorPage/DoctorPage'
 import BeginningSection from '../../../Components/UserComponents/BeginningSection/BeginningSection'
 import TestimonialsSlider from '../../../Components/UserComponents/TestimonialsSlider/TestimonialsSlider';
@@ -19,7 +19,7 @@ const HomePage = () => {
       {/* <Article/> */}
       <BeginningSection/>
       <DoctorPage/>
-      <ArticlePage/>
+      <ArticleSection/>
       {/* <TestimonialSlider/> */}
       {/* <DoctorPage/> */}
       {/* <ArticlePage/> */}
