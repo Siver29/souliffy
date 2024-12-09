@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState , useContext } from 'react'
 import CalenderWrapper from '../../Components/Calendar/CalenderWrapper'
 import Times from '../../Components/Times/Times'
 import ReservationForm from '../../Components/ReservationForm/ReservationForm'
 import ReservationNote from '../../Components/ReservationNote/ReservationNote'
+import { IpContext } from '../../Contexts/IpContext'
 import './Reservation.css'
 
 function Reservation() {
@@ -27,7 +28,7 @@ function Reservation() {
             </div>
           </div>
           <div className='col-12 col-md-6'>
-          <div className=' w-100 mt-5'>
+          {/* <div className=' w-100 mt-5'>
               <CalenderWrapper onDateChange={handleDateSelect} date={selectedDate} />
               {selectedDate && <p>التاريخ الذي أخترته هو : {selectedDate}</p>}
             </div>
@@ -39,7 +40,7 @@ function Reservation() {
                   ))}
                 </div>
                 {selectedTime && <p>الوقت الذي إخترته هو : {selectedTime}</p>}
-              </div>
+              </div> */}
 
             <ReservationForm time={selectedTime} date={selectedDate} handleTimeSelect={setSelectedTime} handleDateSelect={setSelectedDate} />
           </div>

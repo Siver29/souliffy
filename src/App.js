@@ -7,9 +7,11 @@ import ScrollToTop from './Components/UserComponents/ScrollToTop/ScrollToTop';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ArticlePage from './Pages/UserPages/ArticlePage/ArticlePage';
+import { IpProvider } from './Contexts/IpContext';
 
 function App() {
   return (
+    <IpProvider>
     <BrowserRouter>
       <div className="App">
         <Navbar />
@@ -22,6 +24,7 @@ function App() {
         {/* <ScrollToTop/> */}
       </div>
     </BrowserRouter>
+    </IpProvider>
   );
 }
 

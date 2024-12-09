@@ -28,7 +28,10 @@ p{
   background-color: var(--secondary-pink-color) !important;
   font-family: "Tajawal", sans-serif !important;
 }
-
+.secondary-green-background {
+  background-color: var(--secondary-green-color) !important;
+  font-family: "Tajawal", sans-serif !important;
+}
 
 body {
   margin: 0;
